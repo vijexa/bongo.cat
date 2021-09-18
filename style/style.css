@@ -281,7 +281,13 @@ select#select-instrument option {
   background-image: url(../images/cowbell.png)
 }
 
-.instruments>#keyboard, .instruments>#cymbal, .instruments>#marimba, .instruments>#tambourine, .instruments>#cowbell {
+.instruments>#butt, #layer-butt {
+  background-image: url(../images/butt.png);
+  background-position: 100% 0%;
+  background-size: 90%;
+}
+
+.instruments>#keyboard, .instruments>#cymbal, .instruments>#marimba, .instruments>#tambourine, .instruments>#cowbell, .instruments>#butt {
   visibility: hidden
 }
 

@@ -8,7 +8,8 @@ const InstrumentEnum = Object.freeze({
   CYMBAL: 4,
   MARIMBA: 5,
   TAMBOURINE: 6,
-  COWBELL: 7
+  COWBELL: 7,
+  BUTT: 8
 })
 const KeyEnum = Object.freeze({
   "A": 1,
@@ -37,7 +38,9 @@ const KeyEnum = Object.freeze({
   "O": 9,
   "P": 0,
   "B": 1,
-  "F": 1
+  "F": 1,
+  ",": 0,
+  ".": 1
 })
 const InstrumentPerKeyEnum = Object.freeze({
   "A": InstrumentEnum.BONGO,
@@ -66,7 +69,9 @@ const InstrumentPerKeyEnum = Object.freeze({
   "O": InstrumentEnum.MARIMBA,
   "P": InstrumentEnum.MARIMBA,
   "B": InstrumentEnum.TAMBOURINE,
-  "F": InstrumentEnum.COWBELL
+  "F": InstrumentEnum.COWBELL,
+  ",": InstrumentEnum.BUTT,
+  ".": InstrumentEnum.BUTT
 })
 const ClickKeyEquivalentEnum = Object.freeze({
   "1": "A",
@@ -160,6 +165,7 @@ $(document).ready(function() {
   $.load("bongo", 0, 1);
   $.load("keyboard", 0, 9);
   $.load("marimba", 0, 9);
+  $.load("butt", 0, 1);
   $.loadSimple("meow");
   $.loadSimple("cymbal");
   $.loadSimple("tambourine");
