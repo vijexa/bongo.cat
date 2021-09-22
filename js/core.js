@@ -80,13 +80,15 @@ const ClickKeyEquivalentEnum = Object.freeze({
 })
 const TapKeyEquivalentEnum = Object.freeze({
   "tap-left": {
-    "BONGO": ["A"]
+    "BONGO": ["A"],
+    "BUTT": [","]
   },
   "tap-right": {
     "BONGO": ["D"],
     "CYMBAL": ["C"],
     "TAMBOURINE": ["B"],
-    "COWBELL": ["F"]
+    "COWBELL": ["F"],
+    "BUTT": ["."]
   },
   "tap-space": {
     "MEOW": [" "]
@@ -139,7 +141,8 @@ const TapKeysPerLayerEnum = Object.freeze({
   "layer-cymbal": ["tap-right"],
   "layer-marimba": ["tap-keys"],
   "layer-tambourine": ["tap-right"],
-  "layer-cowbell": ["tap-right"]
+  "layer-cowbell": ["tap-right"],
+  "layer-butt": ["tap-left", "tap-right"]
 })
 const LayersPerInstrumentEnum = Object.freeze({
   "layer-bongo": InstrumentEnum.BONGO,
@@ -148,7 +151,8 @@ const LayersPerInstrumentEnum = Object.freeze({
   "layer-cymbal": InstrumentEnum.CYMBAL,
   "layer-marimba": InstrumentEnum.MARIMBA,
   "layer-tambourine": InstrumentEnum.TAMBOURINE,
-  "layer-cowbell": InstrumentEnum.COWBELL
+  "layer-cowbell": InstrumentEnum.COWBELL,
+  "layer-butt": InstrumentEnum.BUTT
 })
 var pressed = [];
 var currentLayer;
