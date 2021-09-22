@@ -291,53 +291,6 @@ select#select-instrument option {
   visibility: hidden
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000 !important;
-    color: #fff !important
-  }
-
-  header a, footer a {
-    color: #fff !important
-  }
-
-  hr {
-    background: #fff !important
-  }
-
-  svg#github {
-    fill: #fff !important;
-    color: #000 !important
-  }
-
-  .key {
-    background: #333;
-    border: 2px solid #252525;
-    box-shadow: inset -6px -4px 0 0 #1b1b1b
-  }
-
-  select#select-instrument, .tap {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.1)
-  }
-
-  select#select-instrument option {
-    background: #000
-  }
-
-  .tap span {
-    text-shadow: none
-  }
-
-  .cat div {
-    background-position-y: -450px
-  }
-
-  .cc-window {
-    border: 1px solid rgba(255, 255, 255, 0.2) !important
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   svg#github:hover .octo-arm {
     animation: none !important
